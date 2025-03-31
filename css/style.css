@@ -1,3 +1,179 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #000;
+    line-height: 1.5;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+header, footer {
+    text-align: center;
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header img {
+    width: 20%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    list-style: none;
+    padding-left: 0;
+}
+
+header ul li {
+    padding-left: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.266rem;
+}
+
+ .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 400px; 
+    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto; 
+    gap: 30px; 
+
+    grid-template-areas: 
+        "div1 div1 div1"
+        "div2 div3 div4"
+    ;
+
+   
+}
+  
+.grid img:nth-child(1) {
+    grid-area: div1;
+}
+  
+.grid img:nth-child(2) {
+    grid-area: div2;
+}
+  
+.grid img:nth-child(3) {
+    grid-area: div3;
+}
+
+.grid img:nth-child(4) {
+    grid-area: div4;
+} 
+
+
+#sweethearts-affair .wrapper {
+    padding: 40px;
+}
+
+.btn {
+display: inline-block;
+  padding: .8em 1em;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #000;
+  border-radius: 4px;
+  margin-top: auto;
+}
+
+#behind-the-dough .wrapper {
+    background-color: #f8fafc;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#behind-the-dough h2 {
+    text-align: center;
+}
+
+#what-people-are-saying div {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    
+    margin: 0 auto;
+}
+
+#what-people-are-saying h2 {
+    text-align: center;
+}
+
+#try-it-with h1 {
+    text-align: center;
+}
+
+#try-it-with .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr; 
+    gap: 20px;
+    
+
+    grid-template-areas: 
+        "div1 div2"
+        "div3 div4"
+    ;
+}
+
+#try-it-with .grid img:nth-child(1) {
+    grid-area: div1;
+    width: 100%;
+}
+
+#try-it-with .grid img:nth-child(2) {
+    grid-area: div2;
+    width: 100%;
+}
+
+#try-it-with .grid img:nth-child(3) {
+    grid-area: div3;
+    width: 100%;
+}
+
+#try-it-with .grid img:nth-child(4) {
+    grid-area: div4;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2.027rem;
+}
+
+h2 {
+    font-size: 1.802rem;
+}
+
+h3 {
+    font-size: 1.266rem;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+}
