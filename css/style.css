@@ -105,6 +105,7 @@ nav a {
 #sweethearts-affair .wrapper {
     display: grid;
     grid-template-columns: 1fr;
+    max-width: 1200px;
 }
 
 .limited {
@@ -136,6 +137,7 @@ a:focus {
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr;
+    max-width: 1200px;
 }
 
 #behind-the-dough h2 {
@@ -151,11 +153,12 @@ a:focus {
     background-color: #000;
 }
 
-#what-people-are-saying div {
+#what-people-are-saying .wrapper {
     color: #fff;
     padding: 20px;
     
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 #what-people-are-saying h2 {
@@ -164,6 +167,10 @@ a:focus {
 
 .grid-3 {
     display: grid;
+}
+
+#try-it-with .wrapper{
+    max-width: 1200px;
 }
 
 #try-it-with h2 {
