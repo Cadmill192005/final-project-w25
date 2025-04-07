@@ -4,9 +4,22 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    color: #000;
+    color: #222;
     line-height: 1.5;
     margin: 0;
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 2.027rem;
+}
+
+h2 {
+    font-size: 1.802rem;
+}
+
+h3 {
+    font-size: 1.266rem;
 }
 
 img {
@@ -27,6 +40,7 @@ header .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
 
 }
 
@@ -49,14 +63,12 @@ header ul li {
 nav a {
     text-decoration: none;
     color: #000;
-    font-size: 1.266rem;
+    font-size: 1rem;
 }
 
- .grid {
+ .grid-1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 400px; 
-    padding: 10px;
     max-width: 1200px;
     margin: 0 auto; 
     gap: 30px; 
@@ -68,30 +80,39 @@ nav a {
 
    
 }
+
+.grid-1 img{
+    border-radius: 25px;
+}
   
-.grid img:nth-child(1) {
+.grid-1 img:nth-child(1) {
     grid-area: div1;
 }
   
-.grid img:nth-child(2) {
+.grid-1 img:nth-child(2) {
     grid-area: div2;
 }
   
-.grid img:nth-child(3) {
+.grid-1 img:nth-child(3) {
     grid-area: div3;
 }
 
-.grid img:nth-child(4) {
+.grid-1 img:nth-child(4) {
     grid-area: div4;
 } 
 
 
 #sweethearts-affair .wrapper {
-    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
-.btn {
-display: inline-block;
+.limited {
+    font-weight: bold;
+}
+
+.btn  {
+  display: inline-block;
   padding: .8em 1em;
   background-color: #000;
   color: #fff;
@@ -101,8 +122,17 @@ display: inline-block;
   margin-top: auto;
 }
 
-#behind-the-dough .wrapper {
+a:hover,
+a:focus {
+  background-color: #fff;
+  color: #000;
+}
+
+#behind-the-dough {
     background-color: #f8fafc;
+}
+
+#behind-the-dough .wrapper {
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr;
@@ -112,8 +142,16 @@ display: inline-block;
     text-align: center;
 }
 
-#what-people-are-saying div {
+.grid-2 {
+    display: grid;
+
+}
+
+#what-people-are-saying {
     background-color: #000;
+}
+
+#what-people-are-saying div {
     color: #fff;
     padding: 20px;
     
@@ -124,56 +162,97 @@ display: inline-block;
     text-align: center;
 }
 
-#try-it-with h1 {
+.grid-3 {
+    display: grid;
+}
+
+#try-it-with h2 {
     text-align: center;
 }
 
-#try-it-with .grid {
+#try-it-with .grid-4 {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr 1fr; 
-    gap: 20px;
-    
-
-    grid-template-areas: 
-        "div1 div2"
-        "div3 div4"
-    ;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
 }
 
-#try-it-with .grid img:nth-child(1) {
-    grid-area: div1;
-    width: 100%;
+.grid-4 article {
+    background-color: #f8fafc;
+    border-radius: 25px;
 }
 
-#try-it-with .grid img:nth-child(2) {
-    grid-area: div2;
-    width: 100%;
+.grid-4 img {
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
 }
 
-#try-it-with .grid img:nth-child(3) {
-    grid-area: div3;
-    width: 100%;
+#try-it-with h3 {
+    text-align: center;
 }
 
-#try-it-with .grid img:nth-child(4) {
-    grid-area: div4;
-    width: 100%;
+#try-it-with p {
+    text-align: center;
 }
 
-h1 {
-    font-size: 2.027rem;
+
+@media (min-width: 768px){
+    body {
+        font-size: 1rem;
+    }
+    .grid-1 {
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 60px;
+
+        grid-template-areas: 
+            "div1 div2"
+            "div3 div4"
+        ;
+    }
+
+    .grid-1 img:nth-child(1) {
+        grid-area: div1;
+    }
+
+    .grid-1 img:nth-child(2) {
+        grid-area: div2;
+    }
+
+    .grid-1 img:nth-child(3) {
+        grid-area: div3;
+    }
+
+    .grid-1 img:nth-child(4) {
+        grid-area: div4;
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #try-it-with  .grid-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
 }
 
-h2 {
-    font-size: 1.802rem;
+@media (min-width: 960px){
+    #sweethearts-affair .wrapper {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
 }
 
-h3 {
-    font-size: 1.266rem;
-}
+
+
+
+
 
 footer {
-    background-color: #000;
-    color: #fff;
+    background-color: #000 ;
+    color: #fff
 }
